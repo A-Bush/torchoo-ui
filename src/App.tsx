@@ -1,22 +1,11 @@
 import * as React from 'react';
 import './App.css';
 import { Card, CardActions, CardHeader, CardMedia, CardText, CardTitle, FlatButton } from 'material-ui';
-import { MuiThemeProvider } from 'material-ui/styles';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { deepOrange500 } from 'material-ui/styles/colors';
-
-const muiTheme = getMuiTheme({
-    palette: {
-        accent1Color: deepOrange500,
-    },
-});
-
 
 class App extends React.Component {
 
     render() {
         return (
-            <MuiThemeProvider muiTheme={muiTheme}>
                 <Card>
                     <CardHeader
                         title="URL Avatar"
@@ -40,7 +29,6 @@ class App extends React.Component {
                         <FlatButton label="Action2"/>
                     </CardActions>
                 </Card>
-            </MuiThemeProvider>
         );
     }
 }
